@@ -28,17 +28,53 @@ header {position: fixed;
 
 #firstpage {text-align: center;}
 
+
 .hometext {padding: 5em;
-          padding-top: 15em;}
+          padding-top: 10em;
+          opacity: 0;
+          animation: fadeIn 5s;
+          animation-fill-mode: forwards;
+          }
+
+
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+
+            100% {
+              opacity: 1;
+            }
+          }
+
+
+
+
 
 .principal    {text-transform: uppercase;
               margin-left: 15%;
               margin-right: 15%;
-            border-bottom: solid;
-            border-bottom-color:#c9c9c9;
-            border-bottom-width: 5px;
-            font-size: 300%;
+              font-size: 300%;}
+
+
+.line  {
+              border-bottom: solid;
+              border-bottom-color:#8C001A;
+              border-bottom-width: 15px;
+              animation: line 2s linear forwards;
             }
+
+            @keyframes line {
+              from {
+                left:50%;
+                width:0%;
+              }
+              to {
+                left:5%;
+                width:70%;
+              }
+            }
+
 
 img {max-width: 100%;
     max-height: auto;}
@@ -71,3 +107,131 @@ footer {border-top: solid;
             opacity: 0.7;}
 
 #about {padding-top: 5em;}
+
+#portafolio {padding-top: 5em;
+              text-align: center;}
+
+a {color: #000000;}
+
+a:hover {color: #D3D3D3;}
+
+a:active {color: #808080;}
+
+
+
+#download {float: right;
+            padding-top: 3em;}
+
+
+#resumes {clear:right;
+          align-items: center;
+          margin-right: 20%;
+          margin-left: 20%;}
+
+/* resume part*/
+
+
+#resume1, #resume2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#resume1:hover, #resume2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* The Close Button */
+.close, .close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus, .close2:hover, .close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* ABOUT SECTION */
+
+
+#titleA {font-style: italic;}
+
+#aboutabout {width: 600px;
+              float: right;
+              padding-right: 3em;
+              padding-left: 2em;
+              border: solid;
+              border-color: #C0C0C0;
+              padding: 1em;
+              max-width: 100%; }
+
+
+#images {width: 350px;
+        height: 350px;
+        max-width: 100%;
+        float: left;
+        margin-bottom: 3em;
+        margin-left: 3em;
+      }
+
+footer {clear: both;}
+
+/*  WEB */
+
+.imgtext {width: 300px;
+        height: 150px;
+          display: inline-block;
+          margin-top: 5em;
+          margin-right: 2em;
+         text-align: justify;}
+
+
+.imageweb {max-width: 100%;
+          margin-bottom: 1em;
+          position: relative;
+}
+
+.imageweb:hover {filter: grayscale(100%);}
+
+
+#maypic {margin-top: 2em;
+}
+
+
+
+.firstgroup {align-items: center;}
+
+#web {padding-right: 5em;
+      padding-left: 5em;}
